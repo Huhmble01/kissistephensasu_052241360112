@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Timetable</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<style>
+	body {
+		background-image: url('timetablealt.jpg');
+		font-family: Arial, sans-serif;
+	}
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+	th, td {
+		border: 1px solid #fff3f3;
+		padding: 10px;
+		text-align: center;
+		background-color: #0c0c0c;
+	}
+	th {
+		background-color: #0c0c0c;
+	}
+	td {
+		font-weight: bold;
+	}
+	.download-link {
+		color: rgb(0, 0, 0);
+		text-decoration: underline;
+	}
+	.download-link:hover{
+		color:#e4ac11;
+	}
+</style>
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			<!-- Logo -->
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images/logo.png" alt="">
+					<span>kstu</span>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="index.html">home</a></li>
+						<li class="main_nav_item"><a href="registration.html">Register</a></li>
+						<li class="main_nav_item"><a href="department.html">department</a></li>
+						<li class="main_nav_item"><a href="payments.html">payments</a></li>
+						<li class="main_nav_item"><a href="#">timetable</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/phone-call.svg" alt="">
+			<span>+233 3220 22387</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+
+	</header>
+	
+	<!-- Menu -->
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+					<li class="menu_item menu_mm"><a href="registration">Register</a></li>
+					<li class="menu_item menu_mm"><a href="department.html">Department</a></li>
+					<li class="menu_item menu_mm"><a href="payments.html">Payments</a></li>
+					<li class="menu_item menu_mm"><a href="timetable.html">Timetables</a></li>
+				</ul>
+
+				<div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+		</div>
+		<div class="home_content">
+			<h1>TIMETABLE</h1>
+		</div>
+	</div>
+
+	<h1 style="color:#2b2424">Computer Technology 2A Timetable</h1>
+    <table>
+        <tr>
+            <th>Day/Period</th>
+            <th>8:00-9:00</th>
+            <th>9:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:00-12:00</th>
+            <th>12:00-1:00</th>
+            <th>1:00-2:00</th>
+            <th>2:00-3:00</th>
+            <th>3:00-4:00</th>
+            <th>4:00-5:00</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan ="2">Discrete Maths</td>
+            <td colspan ="2">Human Computer Interactions</td>
+            <td colspan ="2">Operations Research</td>
+            <td> </td>
+            <td colspan ="2">Database</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan ="2">Discrete Maths</td>
+            <td colspan ="2">Management Information Systems</td>
+            <td colspan ="2">Systems Analysis and Design</td>
+            <td> </td>
+            <td colspan ="2">Backend Web Development</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td colspan ="2">Operations Research</td>
+            <td colspan ="2" >Systems Analysis and Design</td>
+            <td colspan ="2">Backend Web Development</td>
+            <td colspan ="3"></td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td colspan ="2">Management Informations Systems</td>
+            <td colspan ="2" >Human Computer Interactions</td>
+            <td colspan ="2">Operations Research</td>
+            <td colspan ="3"></td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td colspan ="9">Off Day</td>
+        </tr>
+    </table>
+
+    <!-- PDF download -->
+    <h2><p style="color:#0c0c0c">Download  Timetable PDF files:</p></h2>
+    <ul>
+        <li><a class="download-link" href="D:\course-master\course-master\Computer Science 2023_24_Sem 1 - Time Table FINAL.pdf" download>Computer Science (PDF)</a></li>
+		<li><a class="download-link" href="Hotel catering and Institutional Management.pdf" download>Hotel Catering and Institutional Management (PDF)</a></li>
+		<li><a class="download-link" href="Statistical Science.pdf" download>Statistical Science (PDF)</a></li>
+        <li><a class="download-link" href="Food Technology.pdf" download>Food Technology (PDF)</a></li>
+        <li><a class="download-link" href="Information Science.pdf" download>Information Science (PDF)</a></li>
+        <li><a class="download-link" href="Mathematical Science.pdf" download>Mathematical Science (PDF)</a></li>
+
+        <!-- ... other days ... -->
+    </ul>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+
+					<!-- Footer Column - About -->
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images/logo.png" alt="">
+								<span>kstu</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">The Faculty of Applied Science and Technology was carved out of the then Faculty of Applied Sciences in October, 2016. The reason for renaming the faculty was to help introduce new technology-related programmes and also to properly manage the existing ones in the institution.</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Menu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="index.html">Home</a></li>
+								<li class="footer_list_item"><a href="registration.html">Register</a></li>
+								<li class="footer_list_item"><a href="department.html">Departments</a></li>
+								<li class="footer_list_item"><a href="payments.html">Payment</a></li>
+								<li class="footer_list_item"><a href="#">Timetables</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Usefull Links</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="#">Testimonials</a></li>
+								<li class="footer_list_item"><a href="#">FAQ</a></li>
+								<li class="footer_list_item"><a href="#">Community</a></li>
+								<li class="footer_list_item"><a href="#">Campus Pictures</a></li>
+								<li class="footer_list_item"><a href="#">Tuitions</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Kumasi - Ashanti Region, Ghana W/A
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Tel: Admissions: +233(0)322 496 534, +233(0)322 496 380
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>Email: info@kstu.edu.gh
+								</li>
+							</ul>
+						</div>
+					</div>
+
+			</div>
+
+		</div>
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/contact_custom.js"></script>
+
+</body>
+</html>
