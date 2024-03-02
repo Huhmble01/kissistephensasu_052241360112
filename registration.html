@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Course - Courses</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/courses_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
+
+<style>
+    html, body {
+    background-image:url('registeralt.jpg');
+    min-height: 100%;
+    }
+    .picture-container{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .picture-container{
+    max-width: 100%;
+    max-height: 100%;
+    }
+    body, div, form, input, select, p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    }
+    h1 {
+    margin: 0;
+    font-weight: 400;
+    }
+    h3 {
+    margin: 12px 0;
+    color: #4a4b49;
+    }
+    .main-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    }
+    form {
+    width: 100%;
+    padding: 20px;
+    }
+    fieldset {
+    border: none;
+    border-top: 1px solid #8ebf42;
+    }
+    .account-details, .personal-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .account-details >div, .personal-details >div >div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    .account-details >div, .personal-details >div, input, label {
+    width: 100%;
+    }
+    label {
+    padding: 0 5px;
+    text-align: right;
+    vertical-align: middle;
+    }
+    input {
+    padding: 5px;
+    vertical-align: middle;
+    }
+    .checkbox {
+    margin-bottom: 10px;
+    }
+    select, .children, .gender, .bdate-block {
+    width: calc(100% + 26px);
+    padding: 5px 0;
+    }
+    select {
+    background: transparent;
+    }
+    .gender input {
+    width: auto;
+    } 
+    .gender label {
+    padding: 0 5px 0 0;
+    } 
+    .bdate-block {
+    display: flex;
+    justify-content: space-between;
+    }
+    .birthdate select.day {
+    width: 35px;
+    }
+    .birthdate select.mounth {
+    width: calc(100% - 94px);
+    }
+    .birthdate input {
+    width: 38px;
+    vertical-align: unset;
+    }
+    .checkbox input, .children input {
+    width: auto;
+    margin: -2px 10px 0 0;
+    }
+    .checkbox a {
+    color: #8ebf42;
+    }
+    .checkbox a:hover {
+    color: #82b534;
+    }
+    button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px; 
+    border: none;
+    background: #000000; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    }
+    button:hover {
+    background: #e4ac11;
+    }
+    @media (min-width: 568px) {
+    .account-details >div, .personal-details >div {
+    width: 50%;
+    }
+    label {
+    width: 40%;
+    }
+    input {
+    width: 60%;
+    }
+    select, .children, .gender, .bdate-block {
+    width: calc(60% + 16px);
+    }
+    }
+    </style>
+</head>
+<body>
+<div class="super_container">
+
+    <!-- Header -->
+    
+    <header class="header d-flex flex-row">
+        <div class="header_content d-flex flex-row align-items-center">
+            <!-- Logo -->
+            <div class="logo_container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <span>kstu</span>
+                </div>
+            </div>
+    
+            <!-- Main Navigation -->
+            <nav class="main_nav_container">
+                <div class="main_nav">
+                    <ul class="main_nav_list">
+                        <li class="main_nav_item"><a href="index.html">home</a></li>
+                        <li class="main_nav_item"><a href="registration.html">Register</a></li>
+                        <li class="main_nav_item"><a href="department.html">department</a></li>
+                        <li class="main_nav_item"><a href="payments.html">payments</a></li>
+                        <li class="main_nav_item"><a href="timetable.html">tihmetable</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_side d-flex flex-row justify-content-center align-items-center">
+            <img src="images/phone-call.svg" alt="">
+            <span>+233 3220 22387</span>
+        </div>
+    
+        <!-- Hamburger -->
+        <div class="hamburger_container">
+            <i class="fas fa-bars trans_200"></i>
+        </div>
+    
+    </header>
+        
+    <!-- Menu -->
+    <div class="menu_container menu_mm">
+    
+        <!-- Menu Close Button -->
+        <div class="menu_close_container">
+            <div class="menu_close"></div>
+        </div>
+    
+        <!-- Menu Items -->
+        <div class="menu_inner menu_mm">
+            <div class="menu menu_mm">
+                <ul class="menu_list menu_mm">
+                    <li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+                    <li class="menu_item menu_mm"><a href="registration">Register</a></li>
+                    <li class="menu_item menu_mm"><a href="department.html">Department</a></li>
+                    <li class="menu_item menu_mm"><a href="payments.html">Payments</a></li>
+                    <li class="menu_item menu_mm"><a href="timetable.html">Timetables</a></li>
+                </ul>
+    
+                <div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+            </div>
+    
+        </div>
+    
+    </div>
+        
+    <!-- Home -->
+    
+    <div class="home">
+        <div class="home_background_container prlx_parent">
+        </div>
+        <div class="home_content">
+            <h1>REGISTER</h1>
+        </div>
+    </div>
+    
+<div class="main-block">
+<form action="/">
+<fieldset>
+<legend>
+<h3>Account Details</h3>
+</legend>
+<div class="account-details">
+<div><label>Email*</label><input type="text" name="name" required></div>
+<div><label>Password*</label><input type="password" name="name" required></div>
+<div><label>Repeat email*</label><input type="text" name="name" required></div>
+<div><label>Repeat password*</label><input type="password" name="name" required></div>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+<h3>Personal Details</h3>
+</legend>
+<div class="personal-details">
+<div>
+<div><label>First Name*</label><input type="text" name="name" required></div>
+<div><label>Last Name(s)*</label><input type="text" name="name" required></div>
+<div><label>Student Number*</label><input type="text" name="name" required></div>
+<div><label>Phone*</label><input type="text" name="name"></div>
+<div><label>Faculty*</label><input type="text" name="name" required></div>
+<div><label>Department*</label><input type="text" name="name" required></div>
+<div><label>Address*</label><input type="text" name="name" required></div>
+
+</div>
+<div>
+<div>
+<label>Gender*</label>
+<div class="gender">
+<label for="male" class="radio">Male</label>
+<input type="radio" value="none" id="male" name="gender" required/>
+<label for="female" class="radio">Female</label>
+<input type="radio" value="none" id="female" name="gender" required/>
+</div>
+</div>
+<div class="birthdate">
+<label>Birthdate*</label>
+<div class="bdate-block">
+<select class="day" required>
+<option value=""></option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select class="mounth" required>
+<option value=""></option>
+<option value="January">January</option>
+<option value="February">February</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="July">July</option>
+<option value="August">August</option>
+<option value="September">September</option>
+<option value="October">October</option>
+<option value="November">November</option>
+<option value="December">December</option>
+</select>
+<input type="text" name="name" required>
+</div>
+</div>
+<div>
+<label>Nationality*</label> 
+<select required>
+<option value=""></option>
+<option value="Armenian">Armenian</option>
+<option value="Russian">Russian</option>
+<option value="German">German</option>
+<option value="French">French</option>
+<option value="American">American</option>
+<option value="English">English</option>
+<option value="Ghanaian">Ghanaian</option>
+</select>
+</div>
+</div>
+    <h1>Upload Image</h1>
+    <form action="#" nethod="POST" enctype="multipart/form-data">
+    <div class="picture-container">    
+        <img id="uploaded-picture" src="#" alt="Uploaded Picture">
+    </div>
+    <input type="file" name="picture" id="picture" accept="image/*"
+    onchange="previewPicture(event)">
+    <button type="submit">Upload</button>
+    </form>
+
+    <script>
+        function previewPictrue(event){
+            var fileInput = event.target;
+            var pictureContainer = document.getElementById('uploaded-picture');
+            pictureContainer.src = URL.createObjectURL(fileInput.files[0]);
+        }
+    </script>
+</div>
+</div>
+</div>
+</fieldset>
+<fieldset>
+</fieldset>
+<button type="submit" href="/">Submit</button>
+</form>
+</div> 
+
+<footer class="footer">
+    <div class="container">
+        
+        <!-- About -->
+
+        <div class="newsletter">
+            <div class="row">
+                <div class="col">
+                    <div class="section_title text-center">
+                        <h1>About The Faculty</h1>
+                    </div>
+                </div>
+            </div>
+            <h3>The Faculty of Applied Science and Technology was carved out of the then Faculty of Applied Sciences in October, 2016. The reason for renaming the faculty was to help introduce new technology-related programmes and also to properly manage the existing ones in the institution.</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+
+        <div class="footer_content">
+            <div class="row">
+                <div class="col-lg-3 footer_col">
+
+                    <!--Logo -->
+                    <div class="logo_container">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                            <span>kstu</span>
+                        </div>
+                    </div>
+
+                    <p class="footer_about_text">The Faculty of Applied Science and Technology was carved out of the then Faculty of Applied Sciences in October, 2016. The reason for renaming the faculty was to help introduce new technology-related programmes and also to properly manage the existing ones in the institution.</p>
+
+                </div>
+
+                <div class="col-lg-3 footer_col">
+                    <div class="footer_column_title">Menu</div>
+                    <div class="footer_column_content">
+                        <ul>
+                            <li class="footer_list_item"><a href="index.html">Home</a></li>
+							<li class="footer_list_item"><a href="registration.html">Register</a></li>
+							<li class="footer_list_item"><a href="department.html">Department</a></li>
+							<li class="footer_list_item"><a href="payments.html">Payment</a></li>
+							<li class="footer_list_item"><a href="timetable.html">Timetable</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 footer_col">
+                    <div class="footer_column_title">Usefull Links</div>
+                    <div class="footer_column_content">
+                        <ul>
+                            <li class="footer_list_item"><a href="#">Testimonials</a></li>
+                            <li class="footer_list_item"><a href="#">FAQ</a></li>
+                            <li class="footer_list_item"><a href="#">Community</a></li>
+                            <li class="footer_list_item"><a href="#">Campus Pictures</a></li>
+                            <li class="footer_list_item"><a href="#">Tuitions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 footer_col">
+                    <div class="footer_column_title">Contact</div>
+                    <div class="footer_column_content">
+                        <ul>
+                            <li class="footer_contact_item">
+                                <div class="footer_contact_icon">
+                                    <img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                </div>
+                                Kumasi - Ashanti Region, Ghana W/A
+                            </li>
+                            <li class="footer_contact_item">
+                                <div class="footer_contact_icon">
+                                    <img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                </div>
+                                Tel: Admissions: +233(0)322 496 534, +233(0)322 496 380
+                            </li>
+                            <li class="footer_contact_item">
+                                <div class="footer_contact_icon">
+                                    <img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+                                </div>Email: info@kstu.edu.gh
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+            
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
+
